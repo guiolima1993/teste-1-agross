@@ -11,3 +11,10 @@ Para clonar o repositório e rodar a aplicação localmente, siga os passos abai
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+
+#### Rodar Local o projeto
+
+npm install 
+npm start 
+
+##### Só testar o projeto =)
