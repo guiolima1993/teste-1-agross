@@ -9,10 +9,8 @@ Para clonar o repositório e rodar a aplicação localmente, siga os passos abai
 ### Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-
-Rodar Local o projeto
+git clone git@github.com:guiolima1993/teste-1-agross.git
+cd teste-1-agross
 
 npm install 
 npm start 
