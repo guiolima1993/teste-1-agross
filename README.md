@@ -12,7 +12,11 @@ Para clonar o repositório e rodar a aplicação localmente, siga os passos abai
 git clone git@github.com:guiolima1993/teste-1-agross.git
 cd teste-1-agross
 
+Após clonar, na pasta do projeto via terminal rode :
+
 npm install 
 npm start 
 
 Só testar o projeto =)
+
+
