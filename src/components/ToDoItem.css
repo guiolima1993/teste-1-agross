@@ -1,0 +1,119 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-item.completed {
+    background-color: #d4edda;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    height: 20px;
+    width: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkmark.completed {
+    background-color: #28a745;
+  }
+  
+  .checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox:checked + .checkmark::after {
+    display: block;
+  }
+  
+  .custom-checkbox + .checkmark::after {
+    left: 7px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .todo-text {
+    flex: 1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-weight: bolder;
+  }
+  
+  .status {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .todo-dates {
+    font-size: 12px;
+    color: #666;
+    margin-right: 10px;
+  }
+  
+  .creation-date {
+    display: block;
+  }
+  
+  .completion-date {
+    margin-top: 4px;
+  }
+  
+  .remove-btn {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #ff0000;
+  }
+
+
+@media (max-width: 800px) {
+  .todo-item {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .remove-btn {
+    margin-left: 0;
+  }
+}
+
+  
